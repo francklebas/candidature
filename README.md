@@ -1,75 +1,46 @@
-# Nuxt Minimal Starter
+# Candidatures
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Outil personnel de suivi de candidatures d'emploi.
 
-## Setup
+## Objectif
 
-Make sure to install dependencies:
+Garder une trace de toutes les démarches effectuées lors d'une recherche d'emploi : plateformes utilisées, entreprises contactées, dates de candidature et de relance. Éviter les doublons, prouver l'activité de recherche et ne rien laisser tomber.
+
+## Stack
+
+- [Nuxt 4](https://nuxt.com) — framework fullstack Vue.js
+- [Vue 3](https://vuejs.org) — UI
+- [Supabase](https://supabase.com) — base de données et API
+- [Bun](https://bun.sh) — runtime et gestionnaire de paquets
+
+## Fonctionnalités
+
+- Liste des candidatures envoyées
+- Suivi par plateforme et par entreprise
+- Dates de candidature et de relance
+
+## Installation
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Développement
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
 bun run dev
 ```
 
-## Production
+Accessible sur `http://localhost:3000`.
 
-Build the application for production:
+## Variables d'environnement
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```env
+NUXT_PUBLIC_SUPABASE_URL=
+NUXT_PUBLIC_SUPABASE_ANON=
+SUPABASE_SERVICE_ROLE_KEY=
 ```
 
-Locally preview production build:
+## Licence
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+MIT — voir [LICENSE](LICENSE).
